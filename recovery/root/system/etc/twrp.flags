@@ -43,7 +43,7 @@
 /mnt/vendor          ext4      /dev/block/by-name/prodnv            flags=display=vendor
 /data                f2fs      /dev/block/by-name/userdata          flags=display=data;backup=1;
 /external_sd         auto      /dev/block/mmcblk1p1  /dev/block/mmcblk1  flags=display=Micro SD;storage;wipingui;removeable;
-/usb-otg.            auto      /dev/block/sda1  /dev/block/sda      flags=USB OTG;backup=1;wipingui;removeable;
+/usb-otg             auto      /dev/block/sda1  /dev/block/sda      flags=USB OTG;backup=1;wipingui;removeable;
 /efs                 ext4      /dev/block/by-name/sec_efs           flags=display=efs
 /sec_efs             ext4      /dev/block/by-name/sec_efs           flags=display=sec_efs
 /prism               ext4      /dev/block/by-name/prism             flags=display=prism
