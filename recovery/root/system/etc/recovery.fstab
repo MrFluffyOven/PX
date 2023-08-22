@@ -61,7 +61,7 @@ product					/product	ext4	ro,barrier=1				wait,avb=vbmeta_product,logical,first_
 /dev/block/by-name/l_fixnv2              /ltefixnv2          emmc    defaults    recoveryonly
 /dev/block/by-name/l_deltanv             /ltedeltanv         emmc    defaults    recoveryonly
 /dev/block/by-name/wcnmodem              /wcnmodem           emmc    defaults    recoveryonly
-/dev/block/by-name/gnssmodem             /gnssmodem          emmc    defaults    recoveryonly
+/dev/block/mmcblk0p35             /gnssmodem          emmc    defaults    recoveryonly
 /dev/block/mmcblk0p20                /pmsys              emmc    defaults    recoveryonly
 
 /dev/block/mmcblk0p8                     /misc               emmc    defaults    recoveryonly
