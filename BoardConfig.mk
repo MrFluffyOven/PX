@@ -6,7 +6,6 @@
 #
 
 DEVICE_PATH := device/samsung/gta8wifi
-DEVICE_PATH := device/samsung/gta8wifi
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
