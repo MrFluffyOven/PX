@@ -1,8 +1,10 @@
+# Logical Partitions
 /system              ext4   ro   system                               flags=display=system;wait,logical
 /system_ext          ext4   ro   system_ext                           flags=display=system_ext;wait,logical
 /vendor              ext4   ro   vendor                               flags=display=vendor;wait,logical
 /product             ext4   ro   product                              flags=display=product;wait,logical
 
+# Other
 /spl                 emmc      /dev/block/mmcblk0boot0              flags=display=spl
 /spl_bk              emmc      /dev/block/mmcblk0boot1              flags=display=spl_bk
 /uboot               emmc      /dev/block/by-name/uboot             flags=display=uboot
