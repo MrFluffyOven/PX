@@ -25,7 +25,7 @@ odm		/odm		ext4								flags=display="ODM";logical;
 /modem		emmc		/dev/block/bootdevice/by-name/modem			flags=backup=1;display="Modem"
 /dsp		emmc		/dev/block/bootdevice/by-name/dsp
 /misc		emmc		/dev/block/bootdevice/by-name/misc
-/dtbo		emmc		/dev/block/bootdevice/by-name/dtbo			flags=backup=1;flashimg=1;display="Dtbo"
+/dtbo		emmc		/dev/block/mmcblk0p39			flags=backup=1;flashimg=1;display="Dtbo"
 /optics_image	emmc		/dev/block/bootdevice/by-name/optics			flags=backup=1;flashimg=1;display="Optics Image"
 /prism_image	emmc		/dev/block/bootdevice/by-name/prism			flags=backup=1;flashimg=1;display="Prism Image"
 /vbmeta_samsung	emmc		/dev/block/bootdevice/by-name/vbmeta_samsung
