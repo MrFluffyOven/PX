@@ -16,7 +16,7 @@ $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, device/samsung/gta8wifi/device.mk)
 
 PRODUCT_DEVICE := gta8wifi
-PRODUCT_NAME := omni_gta8wifi
+PRODUCT_NAME := twrp_gta8wifi
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-X200
 PRODUCT_MANUFACTURER := samsung
