@@ -1,6 +1,10 @@
 # Add for board init.rc for recovery mode
 import /init.recovery.common.rc
 
+on boot
+    setprop ro.boot.vbmeta.avb_version 1.1
+    setprop ro.boot.avb_version 1.1
+
 # We need vold early for metadata encryption
 on early-fs
     start vold
