@@ -22,6 +22,8 @@ PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-X200
 PRODUCT_MANUFACTURER := samsung
 
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/r8q/recovery/root,recovery/root)
+
 PRODUCT_GMS_CLIENTID_BASE := android-samsung-ss
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
