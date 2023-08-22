@@ -30,7 +30,7 @@
 /persist             emmc      /dev/block/by-name/persist           flags=display=persist
 /logo                emmc      /dev/block/by-name/logo              flags=display=logo
 /fbootlogo           emmc      /dev/block/by-name/fbootlogo         flags=display=fbootlogo
-/metadata            ext4      /dev/block/by-name/metadata          flags=display=metadata
+/metadata            ext4      /dev/block/by-name/metadata          flags=display=metadata;nodev,noatime,nosuid,errors=panic	wait,formattable,first_stage_mount,check
 /socko               ext4      /dev/block/by-name/socko             flags=display=socko
 /odmko               ext4      /dev/block/by-name/odmko             flags=display=odmko
 /cache               ext4      /dev/block/by-name/cache             flags=display=cache
