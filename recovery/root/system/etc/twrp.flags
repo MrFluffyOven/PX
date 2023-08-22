@@ -29,7 +29,7 @@ odm		/odm		ext4								flags=display="ODM";logical;
 /optics_image	emmc		/dev/block/dm-8			flags=backup=1;flashimg=1;display="Optics Image"
 /prism_image	emmc		/dev/block/dm-7			flags=backup=1;flashimg=1;display="Prism Image"
 /vbmeta_samsung	emmc		/dev/block/bootdevice/by-name/vbmeta_samsung
-/vbmeta_system	emmc		/dev/block/bootdevice/by-name/vbmeta_system
+/vbmeta_system	emmc		/dev/block/mmcblk0p43
 
 # Removable storage
 /external_sd   auto        /dev/block/mmcblk1p1    /dev/block/mmcblk1    flags=display="Micro SD card";storage;wipeingui;removable
