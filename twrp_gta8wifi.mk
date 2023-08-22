@@ -19,6 +19,7 @@ PRODUCT_DEVICE := gta8wifi
 PRODUCT_NAME := twrp_gta8wifi
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-X200
+PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung-ss
