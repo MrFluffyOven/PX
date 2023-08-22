@@ -1,9 +1,10 @@
+# Logical Partitions
 /system              ext4   ro   system                               flags=display=system;wait,logical
 /system_ext          ext4   ro   system_ext                           flags=display=system_ext;wait,logical
 /vendor              ext4   ro   vendor                               flags=display=vendor;wait,logical
 /product             ext4   ro   product                              flags=display=product;wait,logical
 
-# System linked Partitions
+# Symlinked Partitions
 /system_image  emmc  /dev/block/dm-0   flags=backup=1;flashimg=1;display=System Image
 /vendor_image  emmc  /dev/block/dm-2   flags=backup=1;flashimg=1;display=Vendor Image
 /product_image emmc  /dev/block/dm-1   flags=backup=1;flashimg=1;display=Product Image
