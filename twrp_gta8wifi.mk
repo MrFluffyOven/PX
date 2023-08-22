@@ -4,7 +4,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-Release name
+
 # Release name
 PRODUCT_RELEASE_NAME := gta8wifi
 
