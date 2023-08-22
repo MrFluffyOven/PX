@@ -14,8 +14,8 @@ odm		/odm		ext4								flags=display="ODM";logical;
 
 # Physical partitions
 /metadata	ext4		/dev/block/by-name/md_udc		flags=backup=1;display="Metadata";
-/boot		emmc		/dev/block/by-name/boot			flags=backup=1;flashimg=1;display="Boot";
-/recovery	emmc		/dev/block/by-name/recovery		flags=backup=1;flashimg=1;display="Recovery";
+/boot		emmc		/dev/block/by-name/boot			flags=backup=1;flashimg=1;display="Boot Image";
+/recovery	emmc		/dev/block/by-name/recovery		flags=backup=1;flashimg=1;display="Recovery Image";
 /data		f2fs		/dev/block/by-name/userdata		flags=wipeingui;display="Data"
 /cache		ext4		/dev/block/by-name/cache		flags=backup=1;display="Cache";
 /dtbo		emmc		/dev/block/by-name/dtbo			flags=backup=1;flashimg=1;display="DTBO";
