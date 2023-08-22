@@ -72,5 +72,5 @@ product					/product	ext4	ro,barrier=1				wait,avb=vbmeta_product,logical,first_
 /dev/block/by-name/fbootlogo             /fbootlogo          emmc    defaults    recoveryonly
 
 /dev/block/by-name/metadata /metadata    ext4   nodev,noatime,nosuid,errors=panic	wait,formattable,first_stage_mount,check
-/dev/block/by-name/cache    /cache       ext4   noatime,nosuid,nodev,nomblk_io_submit,noauto_da_alloc	wait,check
+/dev/block/mmcblk0p49    /cache       ext4   noatime,nosuid,nodev,nomblk_io_submit,noauto_da_alloc	wait,check
 /dev/block/dm-43	/data		f2fs	noatime,nosuid,nodev,discard,usrquota,grpquota,fsync_mode=nobarrier,reserve_root=32768,resgid=5678
