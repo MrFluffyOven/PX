@@ -66,7 +66,7 @@ product					/product	ext4	ro,barrier=1				wait,avb=vbmeta_product,logical,first_
 
 /dev/block/by-name/misc                  /misc               emmc    defaults    recoveryonly
 /dev/block/mmcblk0p37                  /boot               emmc    defaults    recoveryonly    flags=backup=1;display="Boot";flashimg=1
-/dev/block/by-name/recovery              /recovery           emmc    defaults    recoveryonly    flags=backup=1;display="Recovery";flashimg=1
+/dev/block/mmcblk0p38              /recovery           emmc    defaults    recoveryonly    flags=backup=1;display="Recovery";flashimg=1
 /dev/block/by-name/persist               /persist            emmc    defaults    recoveryonly
 /dev/block/by-name/logo                  /logo               emmc    defaults    recoveryonly
 /dev/block/by-name/fbootlogo             /fbootlogo          emmc    defaults    recoveryonly
