@@ -54,12 +54,12 @@ product					/product	ext4	ro,barrier=1				wait,avb=vbmeta_product,logical,first_
 
 /dev/block/by-name/l_ldsp                /ltedsp             emmc    defaults    recoveryonly
 /dev/block/by-name/l_gdsp                /ltegdsp            emmc    defaults    recoveryonly
-/dev/block/by-name/l_agdsp               /lteagdsp           emmc    defaults    recoveryonly
+/dev/block/mmc/blk/0p52                  /lteagdsp           emmc    defaults    recoveryonly
 /dev/block/by-name/l_cdsp                /ltecdsp            emmc    defaults    recoveryonly
 /dev/block/by-name/l_modem               /ltemodem           emmc    defaults    recoveryonly
-/dev/block/by-name/l_fixnv1              /ltefixnv1          emmc    defaults    recoveryonly
-/dev/block/by-name/l_fixnv2              /ltefixnv2          emmc    defaults    recoveryonly
-/dev/block/by-name/l_deltanv             /ltedeltanv         emmc    defaults    recoveryonly
+/dev/block/mmc/blk/0p3                   /ltefixnv1          emmc    defaults    recoveryonly
+/dev/block/mmc/blk/0p4                   /ltefixnv2          emmc    defaults    recoveryonly
+/dev/block/mmc/blk/0p5                   /ltedeltanv         emmc    defaults    recoveryonly
 /dev/block/mmcblk0p36                    /wcnmodem           emmc    defaults    recoveryonly
 /dev/block/mmcblk0p35                    /gnssmodem          emmc    defaults    recoveryonly
 /dev/block/mmcblk0p20                    /pmsys              emmc    defaults    recoveryonly
