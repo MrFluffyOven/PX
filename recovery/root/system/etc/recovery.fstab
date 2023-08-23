@@ -73,4 +73,4 @@ product					/product	ext4	ro,barrier=1				wait,avb=vbmeta_product,logical,first_
 
 /dev/block/mmcblk0p42    /metadata    ext4   nodev,noatime,nosuid,errors=panic	wait,formattable,first_stage_mount,check
 /dev/block/mmcblk0p49    /cache       ext4   noatime,nosuid,nodev,nomblk_io_submit,noauto_da_alloc	wait,check
-/dev/block/mmcblk0p43	   /data		    f2fs   rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,discard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,extent_cache,mode=adaptive,active_logs=6,reserve_root=19425,resuid=0,resgid=5678,usrquota,grpquota,inlinecrypt,alloc_mode=reuse,fsync_mode=nobarrier
+/dev/block/mmcblk0p53	   /data		    f2fs   rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,discard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,extent_cache,mode=adaptive,active_logs=6,reserve_root=19425,resuid=0,resgid=5678,usrquota,grpquota,inlinecrypt,alloc_mode=reuse,fsync_mode=nobarrier
