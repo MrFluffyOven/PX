@@ -20,7 +20,7 @@ odm	      	/odm	       	ext4								            flags=display="ODM";logical;
 /cache		      ext4		/dev/block/mmcblk0p49			                flags=backup=1;display="Cache"
 /persist	      ext4		/dev/block/mmcblk0p12			                flags=fsflags=ro;display="Persist"
 /efs	  	      ext4		/dev/block/bootdevice/by-name/efs			    flags=backup=1;display="EFS"
-/sec_efs	      ext4		/dev/block/bootdevice/by-name/sec_efs			flags=backup=1;display="SEC EFS"
+/sec_efs	      ext4		/dev/block/mmc/blk/0p11			flags=backup=1;display="SEC EFS"
 /firmware	      emmc		/dev/block/bootdevice/by-name/apnhlos			flags=backup=1;display="Firmware"
 /modem		      emmc		/dev/block/bootdevice/by-name/modem			    flags=backup=1;display="Modem"
 /dsp		      emmc		/dev/block/bootdevice/by-name/dsp
