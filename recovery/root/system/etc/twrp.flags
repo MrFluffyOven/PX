@@ -1,35 +1,35 @@
 
 # Logical partitions
-system     	/system		    ext4								flags=display="System";logical;
-system_ext  /system_ext   ext4                flags=display="System_ext";logical;
-vendor	    /vendor		    ext4								flags=display="Vendor";logical;
-product    	/product    	ext4								flags=display="Product";logical;
-odm	      	/odm	       	ext4								flags=display="ODM";logical;
+system     	/system		    ext4								            flags=display="System";logical;
+system_ext  /system_ext     ext4                                            flags=display="System_ext";logical;
+vendor	    /vendor		    ext4								            flags=display="Vendor";logical;
+product    	/product    	ext4								            flags=display="Product";logical;
+odm	      	/odm	       	ext4								            flags=display="ODM";logical;
 
 # Symlinked partitions
-/system_image	  emmc		/dev/block/dm-0				flags=backup=1;flashimg=1;display="System Image";
-/vendor_image 	emmc		/dev/block/dm-5					flags=backup=1;flashimg=1;display="Vendor Image";
-/product_image	emmc		/dev/block/dm-6					flags=backup=1;flashimg=1;display="Product Image";
-/odm_image		  emmc		/dev/block/dm-3					flags=backup=1;flashimg=1;display="ODM Image";
+/system_image	  emmc		/dev/block/dm-0				                    flags=backup=1;flashimg=1;display="System Image";
+/vendor_image 	  emmc		/dev/block/dm-5					                flags=backup=1;flashimg=1;display="Vendor Image";
+/product_image	  emmc		/dev/block/dm-6					                flags=backup=1;flashimg=1;display="Product Image";
+/odm_image		  emmc		/dev/block/dm-3					                flags=backup=1;flashimg=1;display="ODM Image";
 
 # Physical partitions
-/metadata	      ext4		/dev/block/mmcblk0p42			flags=backup=1;display="Metadata"
-/boot	  	      emmc	 	/dev/block/mmcblk0p37			flags=backup=1;flashimg=1;display="Boot"
-/recovery	      emmc		/dev/block/mmcblk0p38			flags=backup=1;flashimg=1;display="Recovery"
-/data	  	      f2fs	  /dev/block/dm-43
-/cache		      ext4		/dev/block/mmcblk0p49			flags=backup=1;display="Cache"
-/persist	      ext4		/dev/block/mmcblk0p12			flags=fsflags=ro;display="Persist"
-/efs	  	      ext4		/dev/block/bootdevice/by-name/efs			flags=backup=1;display="EFS"
+/metadata	      ext4		/dev/block/mmcblk0p42			                flags=backup=1;display="Metadata"
+/boot	  	      emmc	 	/dev/block/mmcblk0p37			                flags=backup=1;flashimg=1;display="Boot"
+/recovery	      emmc		/dev/block/mmcblk0p38			                flags=backup=1;flashimg=1;display="Recovery"
+/data	  	      f2fs	    /dev/block/dm-43
+/cache		      ext4		/dev/block/mmcblk0p49			                flags=backup=1;display="Cache"
+/persist	      ext4		/dev/block/mmcblk0p12			                flags=fsflags=ro;display="Persist"
+/efs	  	      ext4		/dev/block/bootdevice/by-name/efs			    flags=backup=1;display="EFS"
 /sec_efs	      ext4		/dev/block/bootdevice/by-name/sec_efs			flags=backup=1;display="SEC EFS"
 /firmware	      emmc		/dev/block/bootdevice/by-name/apnhlos			flags=backup=1;display="Firmware"
-/modem		      emmc		/dev/block/bootdevice/by-name/modem			flags=backup=1;display="Modem"
-/dsp		        emmc		/dev/block/bootdevice/by-name/dsp
-/misc		        emmc		/dev/block/mmcblk0p8
-/dtbo		        emmc		/dev/block/mmcblk0p39			flags=backup=1;flashimg=1;display="Dtbo"
-/optics_image	  emmc		/dev/block/dm-8			flags=backup=1;flashimg=1;display="Optics Image"
-/prism_image	  emmc		/dev/block/dm-7			flags=backup=1;flashimg=1;display="Prism Image"
-/vbmeta_samsung	emmc		/dev/block/bootdevice/by-name/vbmeta_samsung
-/vbmeta_system	emmc		/dev/block/mmcblk0p43
+/modem		      emmc		/dev/block/bootdevice/by-name/modem			    flags=backup=1;display="Modem"
+/dsp		      emmc		/dev/block/bootdevice/by-name/dsp
+/misc		      emmc		/dev/block/mmcblk0p8
+/dtbo		      emmc		/dev/block/mmcblk0p39			                flags=backup=1;flashimg=1;display="Dtbo"
+/optics_image	  emmc		/dev/block/dm-8			                        flags=backup=1;flashimg=1;display="Optics Image"
+/prism_image	  emmc		/dev/block/dm-7			                        flags=backup=1;flashimg=1;display="Prism Image"
+/vbmeta_samsung	  emmc		/dev/block/bootdevice/by-name/vbmeta_samsung
+/vbmeta_system	  emmc		/dev/block/mmcblk0p43
 
 # Removable storage
 /external_sd   auto        /dev/block/mmcblk1p1    /dev/block/mmcblk1    flags=display="Micro SD card";storage;wipeingui;removable
