@@ -16,7 +16,7 @@ odm	      	/odm	       	ext4								            flags=display="ODM";logical;
 /metadata	      ext4		/dev/block/mmcblk0p42			                flags=backup=1;display="Metadata"
 /boot	  	      emmc	 	/dev/block/mmcblk0p37			                flags=backup=1;flashimg=1;display="Boot"
 /recovery	      emmc		/dev/block/mmcblk0p38			                flags=backup=1;flashimg=1;display="Recovery"
-/data	  	      f2fs	    /dev/block/dm-43
+/data	  	      f2fs	    /dev/block/dm-43                                flags=backup=1;wipeingui;
 /cache		      ext4		/dev/block/mmcblk0p49			                flags=backup=1;display="Cache"
 /persist	      ext4		/dev/block/mmcblk0p12			                flags=fsflags=ro;display="Persist"
 /efs	  	      ext4		/dev/block/bootdevice/by-name/efs			    flags=backup=1;display="EFS"
