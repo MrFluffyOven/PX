@@ -43,11 +43,11 @@ product					/product	ext4	ro,barrier=1				wait,avb=vbmeta_product,logical,first_
 #<src>                                    <mnt_point>    <type>    <mnt_flags and options>    <fs_mgr_flags>
 /dev/block/mmcblk0boot0                  /spl                emmc    defaults    recoveryonly
 /dev/block/mmcblk0boot1                  /spl_bk             emmc    defaults    recoveryonly
-/dev/block/mmcblk0p24                 /uboot              emmc    defaults    recoveryonly
-/dev/block/mmcblk0p18                   /sml                emmc    defaults    recoveryonly
-/dev/block/mmcblk0p16               /tos                emmc    defaults    recoveryonly
-/dev/block/mmcblk0p21                /teecfg             emmc    defaults    recoveryonly
-/dev/block/mmcblk0p26                /vbmeta             emmc    defaults    recoveryonly
+/dev/block/mmcblk0p24                    /uboot              emmc    defaults    recoveryonly
+/dev/block/mmcblk0p18                    /sml                emmc    defaults    recoveryonly
+/dev/block/mmcblk0p16                    /tos                emmc    defaults    recoveryonly
+/dev/block/mmcblk0p21                    /teecfg             emmc    defaults    recoveryonly
+/dev/block/mmcblk0p26                    /vbmeta             emmc    defaults    recoveryonly
 /dev/block/mmcblk0p43                    /vbmeta_system      emmc    defaults    recoveryonly
 /dev/block/mmcblk0p44                    /vbmeta_vendor      emmc    defaults    recoveryonly
 /dev/block/mmcblk0p39                    /dtbo               emmc    defaults    recoveryonly
@@ -60,17 +60,17 @@ product					/product	ext4	ro,barrier=1				wait,avb=vbmeta_product,logical,first_
 /dev/block/by-name/l_fixnv1              /ltefixnv1          emmc    defaults    recoveryonly
 /dev/block/by-name/l_fixnv2              /ltefixnv2          emmc    defaults    recoveryonly
 /dev/block/by-name/l_deltanv             /ltedeltanv         emmc    defaults    recoveryonly
-/dev/block/mmcblk0p36              /wcnmodem           emmc    defaults    recoveryonly
-/dev/block/mmcblk0p35             /gnssmodem          emmc    defaults    recoveryonly
-/dev/block/mmcblk0p20                /pmsys              emmc    defaults    recoveryonly
+/dev/block/mmcblk0p36                    /wcnmodem           emmc    defaults    recoveryonly
+/dev/block/mmcblk0p35                    /gnssmodem          emmc    defaults    recoveryonly
+/dev/block/mmcblk0p20                    /pmsys              emmc    defaults    recoveryonly
 
 /dev/block/mmcblk0p8                     /misc               emmc    defaults    recoveryonly
 /dev/block/mmcblk0p37                    /boot               emmc    defaults    recoveryonly    flags=backup=1;display="Boot";flashimg=1
 /dev/block/mmcblk0p38                    /recovery           emmc    defaults    recoveryonly    flags=backup=1;display="Recovery";flashimg=1
-/dev/block/mmcblk0p12               /persist            emmc    defaults    recoveryonly
-/dev/block/mmcblk0p31                  /logo               emmc    defaults    recoveryonly
+/dev/block/mmcblk0p12                    /persist            emmc    defaults    recoveryonly
+/dev/block/mmcblk0p31                    /logo               emmc    defaults    recoveryonly
 /dev/block/mmcblk0p32                    /fbootlogo          emmc    defaults    recoveryonly
 
 /dev/block/mmcblk0p42    /metadata    ext4   nodev,noatime,nosuid,errors=panic	wait,formattable,first_stage_mount,check
 /dev/block/mmcblk0p49    /cache       ext4   noatime,nosuid,nodev,nomblk_io_submit,noauto_da_alloc	wait,check
-/dev/block/mmcblk0p43	       /data		    f2fs   rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,discard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,extent_cache,mode=adaptive,active_logs=6,reserve_root=19425,resuid=0,resgid=5678,usrquota,grpquota,inlinecrypt,alloc_mode=reuse,fsync_mode=nobarrier
+/dev/block/mmcblk0p43	   /data		    f2fs   rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,discard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,extent_cache,mode=adaptive,active_logs=6,reserve_root=19425,resuid=0,resgid=5678,usrquota,grpquota,inlinecrypt,alloc_mode=reuse,fsync_mode=nobarrier
